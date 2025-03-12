@@ -14,5 +14,8 @@ export default defineConfig({
   ],
   html: {
     title: '翼灵任务系统'
+  },
+  server: {
+    port: 80
   }
 })
