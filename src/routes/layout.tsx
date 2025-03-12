@@ -1,9 +1,12 @@
-import { Outlet } from '@modern-js/runtime/router';
+import RouteInterceptor from '@/utils/routeIntereceptor'
+import './globals.scss'
+import { Outlet } from '@modern-js/runtime/router'
 
-export default function Layout() {
+export default function RootLayout() {
   return (
-    <div>
+    <div className="h-screen">
+      <RouteInterceptor />
       <Outlet />
     </div>
-  );
+  )
 }
